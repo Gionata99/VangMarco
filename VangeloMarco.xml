@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI
+  xmlns="http://www.tei-c.org/ns/1.0"
+  xmlns:xi="http://www.w3.org/2001/XInclude"
+  xmlns:svg="http://www.w3.org/2000/svg"
+  xmlns:math="http://www.w3.org/1998/Math/MathML">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Edizione Vangelo Marco</title>
+                <author>Marco Evangelista</author>
+                <respStmt>
+                    <resp>Edited by</resp>
+                    <name xml:id="Gionata">Gionata Tomasiello</name>
+                </respStmt>
+                <respStmt>
+                    <resp>Text Encoding by</resp>
+                    <name xml:id="daniele">Gionata Tomasiello</name>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <interpGrp>
+                        <interp xml:id="rec1">Recensio 1</interp>
+                        <interp xml:id="rec2">Recensio 2</interp>
+                        <interp xml:id="rec3">Recensio 3</interp>
+                        <interp xml:id="rec4">Recensio 4</interp>
+                        <interp xml:id="rec5">Recensio 5</interp>
+                    </interpGrp>
+                </edition>
+            </editionStmt>
+            <publicationStmt>
+                <p></p>
+            </publicationStmt>
+            <notesStmt>
+                <note>
+                </note>
+            </notesStmt>
+            <sourceDesc>
+                <listWit>
+                    <listWit xml:id="rec1_wits" ana="#rec1" resp="#Gionata">
+                    <head>Witnesses of version A</head>
+                    <witness xml:id="M2">
+                        <msDesc>
+                            <msIdentifier>
+                                <settlement>Venezia</settlement>
+                                <repository>Biblioteca Marciana</repository>
+                                <idno>It. 2</idno>
+                            </msIdentifier>
+                        </msDesc>
+                    </witness>
+                    </listWit>
+                    <listWit xml:id="rec2_wits" ana="#rec2" resp="#Gionata">
+                    <head>Witnesses of version B</head>
+                    <witness xml:id="R1252">
+                        <msDesc>
+                            <msIdentifier>
+                                <settlement>Firenze</settlement>
+                                <repository>Biblioteca Riccardiana</repository>
+                                <idno>Riccardiano 1252</idno>
+                            </msIdentifier>
+                        </msDesc>
+                    </witness>
+            
+                    </listWit>
+                    <listWit xml:id="rec3_wits" ana="#rec3" resp="#chiara">
+                    <head>Witnesses of version C</head>
+                    <witness xml:id="P2">
+                        <msDesc>
+                            <msIdentifier>
+                                <settlement>Parigi</settlement>
+                                <repository>Bibliothèque Nationale de France</repository>
+                                <idno>Français 2</idno>
+                            </msIdentifier>
+                        </msDesc>
+                    </witness>
+                    </listWit>
+                    <listWit xml:id="rec4_wits" ana="#rec4" resp="#chiara">
+                        <head>Witnesses of version D</head>
+                        <witness xml:id="F1043">
+                            <msDesc>
+                                <msIdentifier>
+                                    <settlement>Firenze</settlement>
+                                    <repository>Biblioteca Nazionale Centrale di Firenze</repository>
+                                    <idno>Conventi Soppressi 1043</idno>
+                                </msIdentifier>
+                            </msDesc>
+                        </witness>
+                        </listWit>
+                        <listWit xml:id="rec5_wits" ana="#rec5" resp="#Gionata">
+                            <head>Witnesses of Vulgata</head>
+                            <witness xml:id="V">
+                            </witness>
+                            </listWit>
+                </listWit>
+                <listPerson>
+                    <person xml:id="p_Marco" sortKey="Marco">
+                        <persName full="yes" xml:lang="it">Marco</persName>
+                        <persName full="yes" type="alternative" xml:lang="en">Marco Evangelista</persName>
+                        <persName full="abb" xml:lang="it">Mc.</persName>
+                        <birth calendar="#gregorian" notBefore="-0384" notAfter="-0383">12 d.C.</birth>
+                        <death  calendar="#gregorian" when="-0322">68 d.C.</death>
+                    </person>
+                </listPerson>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <variantEncoding method="parallel-segmentation" location="internal" />
+            <tagsDecl>
+            </tagsDecl>
+        </encodingDesc>
+    </teiHeader>
+    <!--END OF TEIHEADER-->
+
+    <!--BEGINNING OF TEXT-->
+    <text>
+
+        <!--BEGINNING OF BODY-->
+        <body>
+
+<!--First div-->
+<div>
+    <!--Beginning of Head-->
+    <head><supplied resp="#Gionata">Cap. I</supplied>
+
+    </head>
+    <!--End of Head-->
+              <!-- Primo versetto -->
+              <p>
+                <app>
+                  <lem wit="#M2">Lincominciamento del vangelio di yhu cristo filliuolo di davi</lem>
+                  <rdg wit="#R1252">Comminciamento del vangielio di (Jesu) (Cristo) figluolo di Dio.</rdg>
+                  <rdg wit="#P2">Questo è il comintiamento del vangelio di ihu xpo figliuolo didio.</rdg>
+                  <rdg wit="#F1043">Lo cominciamento del vangelio  di gesu cristo figluolo didio</rdg>
+                  <rdg wit="#V">Initium evangelii Iesu Christi, Filii Dei.</rdg>
+                </app>
+              </p>
+              <!-- Secondo versetto -->
+              <p>
+                <app>
+                  <lem wit="#M2">sicome e scritto inisaia profeta Ecco chio mando langelo mio denanzi dalafaccia tua il quale apparecchiara la via tua dina[n?]çi datte.</lem>
+                  <rdg wit="#R1252">Siccome è scricto in Ysaia profeta Ecco k'io mando l'angelo mio dinançi dalla faccia tua lo quale ae aparekiata la via tua dinançi damme.</rdg>
+                  <rdg wit="#P2">Sicome e scricto  in ysaya profeta. Et eccho ch'io mando langelomio dinanzi alla faccia tua lo quale apparicchiera la via tua dinanzi datte.</rdg>
+                  <rdg wit="#F1043">sicome ischripto e in isaia profeta Ecco cheio mando langelo mio dinanzi dalla tua faccia il quale apparecchiera la via tua dinançi da te</rdg>
+                  <rdg wit="#V">Sicut scriptum est in Esaia propheta: Ecce mitto angelum meum ante faciem tuam, qui praeparabit viam tuam.</rdg>
+                </app>
+              </p>
+              <!-- Terzo versetto -->
+              <p>
+                <app>
+                  <lem wit="#M2">La boce del gridatore nel deserto apparechiate la via del segnore, fatte deriti li suoi  andamenti.</lem>
+                  <rdg wit="#R1252">La boce di colui ke kiama nel diserto et dicendo apparekiate la via del signore et fate diricti li suoi sentieri.</rdg>
+                  <rdg wit="#P2">Voce di colui che grida nel diserto apparicchiate la via del signore diritti fati i suoi sentieri</rdg>
+                  <rdg wit="#F1043">voce di quello che chiama nel diserto Apparecchiate la via del singnore Diritti fate li suoi sentieri.</rdg>
+                  <rdg wit="#V">vox clamantis in deserto: Parate viam Domini rectas facite semitas eius.</rdg>
+                </app>
+              </p>
+              <!-- Quarto versetto -->
+              <p>
+                <app>
+                  <lem wit="#M2">fue Iovanni nel deserto predicando et battezzando battesimo di penitentia in perdono dei peccati.</lem>
+                  <rdg wit="#R1252">Et fue giovanni nel deserto bacteçando et predicando il bactesimo della penitentia in rimissione de peccatori.</rdg>
+                  <rdg wit="#P2">Fu iovanni nel deserto baptizando et predicando lo baptisimo [M2018 baptismo] della penitentia i [sic] remissione de’ peccati.</rdg>
+                  <rdg wit="#F1043">E fu giovanni nel deserto batteççando et predicando il battesimo della penitença in rimessione  de peccati</rdg>
+                  <rdg wit="#V">Fuit Iohannes in deserto baptizans, et praedicans baptismum paenitentiae in remissionem peccatorum.</rdg>
+                </app>
+              </p>
+              <!-- Quinto versetto -->
+              <p>
+                <app>
+                  <lem wit="#M2">et usciano allui tutta la contrada degiudea et  tutti affati quelli di Gerusale et battizavansi  da llui nel fiume digiordano confessando  le peccata loro.</lem>
+                  <rdg wit="#R1252">Et venia allui ogni huomo della provincia di giudea et tucti quelli di ierusalem Et erano bacteçati da giovanni nel fiume giordano confessando i peccati loro.</rdg>
+                  <rdg wit="#P2">Et usciva a llui tutta la regione di Judea  et li ierosolimitani ** et erano baptizati dallui nel fiume giordano Confessando i peccati loro.</rdg>
+                  <rdg wit="#F1043">Et usciva allui ongnnomo della provinca di giudea et tutti quegli  digerusalem Ed erano batteççati da quello in giordano fiume confessanti i peccati suoi</rdg>
+                  <rdg wit="#V">Et egrediebatur ad illum omnis Iudaeae regio, et Hierosolymitae universi, et baptizabantur ab illo in Iordane flumine, confitentes peccata sua.</rdg>
+                </app>
+              </p>
+ 
+    <!--End of second Paragraph-->
+</div>
+<!--End of first Div-->
+
+        </body>
+        <!--END OF BODY-->
+    </text>
+    <!--END OF TEXT-->
+
+<!--END OF DOCUMENT-->
+</TEI>
